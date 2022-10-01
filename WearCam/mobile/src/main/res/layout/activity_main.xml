@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:background="@drawable/shadow"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:paddingTop="30dp"
+        android:paddingHorizontal="16dp"
+        android:paddingBottom="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/indicator"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:indeterminate="true"
+            app:indicatorColor="@color/white"
+            app:indicatorSize="25dp"
+            app:trackThickness="2dp"/>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/connecting"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/white"
+            android:textSize="17sp"/>
+    </LinearLayout>
+
+</FrameLayout>
