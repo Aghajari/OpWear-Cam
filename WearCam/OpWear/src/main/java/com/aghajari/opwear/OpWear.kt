@@ -153,11 +153,11 @@ object OpWear {
         RESPONSE
     }
 
-    interface OnConnectionChangedListener {
+    fun interface OnConnectionChangedListener {
         fun onConnectionChange(status: ConnectionStatus)
     }
 
-    interface OnAcknowledgeListener {
+    fun interface OnAcknowledgeListener {
         fun onAcknowledgeRequest(nodeId: String, displayName: String): Boolean
     }
 
